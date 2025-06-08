@@ -1,1 +1,1 @@
-# so-pagination
+# project-so
