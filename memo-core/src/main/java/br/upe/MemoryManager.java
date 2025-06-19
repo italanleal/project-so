@@ -8,14 +8,14 @@ public class MemoryManager implements MemoryManagementMediator {
     public void registerComponent(MemoryManagementComponent component) {
         component.setMediator(this);
         switch (component.getName()) {
-            case "AddButton":
-                add = (AddButton)component;
+            case "PhysicalMemory":
+                pMemo = (PhysicalMemory) component;
                 break;
-            case "DelButton":
-                del = (DeleteButton)component;
+            case "VirtualMemory":
+                vMemo = (VirtualMemory) component;
                 break;
-            case "Filter":
-                filter = (Filter)component;
+            case "DiskMemory":
+                dMemo = (DiskMemory) component;
                 break;
         }
     }
